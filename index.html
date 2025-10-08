@@ -4,11 +4,12 @@
     <meta charset="UTF-8"><!-- Definimos la codificación de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Hace que la página se adapte a móviles -->
     <title>carlo</title><!-- Título de la página -->
-
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <style>
         /* Cuerpo de la página con fondo y centrado */
         body {
             background-image: url("./img/kyojuro background.jpeg"); /* Imagen de fondo */
+            background-color: black;
             background-size: cover; /* Que cubra toda la pantalla */
             background-position: center; /* Centrado de la imagen */
             background-repeat: no-repeat; /* No repetir imagen */
@@ -100,9 +101,30 @@
             from { opacity: 0; } /* Comienza invisible */
             to { opacity: 1; } /* Termina visible */
         }
+        a{color: rgb(230, 211, 0);text-decoration: none;
+        }
+        #titulo{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          align-self: start;
+          color: white;
+          font-size: 15px;
+        }
+        #link{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    align-self: start;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+} 
     </style>
 </head>
 <body>
+    <h2 id="titulo">LinkTree del creador</h2><!--Titulo de el link para el linktree -->
+    <h3 id="link"><a href="https://romeromia.github.io/linktree/" target="_blank" aria-label="Ir al sitio web de CDM de Ortiz Bautista">https://romeromia.github.io/linktree/</a></h3><!-- link del linktree-->
     <div id="caja">
         <!-- Formulario principal -->
         <form onsubmit="Calculo(event)">
